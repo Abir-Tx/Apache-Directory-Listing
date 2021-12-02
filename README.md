@@ -29,6 +29,13 @@
    - Replace `{LISTING_STYLE}` to either `grid`, `table`, `grid-darkmode` or `table-darkmode`.
 
 
+## Quick Hacks
+Use `sed` to quickly replace the `{LISTING_DIRECTORY}` and create a new `.htaccess` file in just a single command 
+
+```bash
+sed 's/{LISTING_DIRECTORY}/\/directory-listing/g' htaccess.txt > .htaccess
+```
+
 ## Credits
 * Icons referenced from [File Types Icons Set](https://web.archive.org/web/20161030160003/http://uifest.com/product/file-types-icons-set).
 
