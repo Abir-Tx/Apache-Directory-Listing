@@ -3,6 +3,12 @@
       Add any static information or notices here
     -->
   <h1 id="banner">Welcome to Xtrex Network Public Download Server</h1>
+
+  <p id="date"></p>
+
+  <h1 class="title">Index of <span class="js-path"></span></h1>
+
+
   <style>
     #banner {
       color: rgb(255, 255, 255);
@@ -22,6 +28,27 @@
         color: red;
       }
     }
+
+
+    #date {
+      color: blue;
+      transform: translate(20%);
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: large;
+    }
+
+    @media only screen and (max-width: 600px) {
+      #date {
+        display: none;
+      }
+    }
   </style>
 
-  <h1 class="title">Index of <span class="js-path"></span></h1>
+
+  <script>
+    var options = {
+      weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric'
+    };
+    var today = new Date();
+    document.getElementById("date").innerText = today.toLocaleDateString("en-US", options);
+  </script>
