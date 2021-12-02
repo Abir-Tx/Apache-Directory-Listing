@@ -1,6 +1,27 @@
-  <main>
-    <!--
+<main>
+  <!--
       Add any static information or notices here
     -->
+  <h1 id="banner">Welcome to Xtrex Network Public Download Server</h1>
+  <style>
+    #banner {
+      color: rgb(255, 255, 255);
+      transition: 1s ease-in-out;
+      animation-name: banneranim;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+    }
 
-    <h1 class="title">Index of <span class="js-path"></span></h1>
+    @keyframes banneranim {
+      from {
+        color: white;
+      }
+
+      to {
+        color: red;
+      }
+    }
+  </style>
+
+  <h1 class="title">Index of <span class="js-path"></span></h1>
